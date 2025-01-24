@@ -52,7 +52,7 @@
 &HML PLUS EQUAL  &HML NUMBER_1 Q     &HML NUMBER_2 W  &HML NUMBER_3 E  &HML NUMBER_4 R    &HML N5 T          &HMR NUMBER_6 Y  &HMR N7 U           &HMR N8 I         &HMR N9 O     &HMR N0 P              &HMR LS(MINUS) MINUS
 &kp GRAVE        &HML ESCAPE A       &HML LCTRL S     &HML LEFT_ALT D  &HML LEFT_SHIFT F  &HML LEFT_WIN G    &HMR LEFT_WIN H  &HMR RIGHT_SHIFT J  &HMR RIGHT_ALT K  &HMR RCTRL L  &HMR ESCAPE SEMICOLON  &kp SQT
 &kp BACKSLASH    &mt LEFT_BRACKET Z  &kp X            &kp C            &kp V              &kp B              &kp N            &kp M               &kp COMMA         &kp DOT       &kp RIGHT_BRACKET      &kp FSLH
-                                                      &kp DELETE       &mo 1              &kp SPACE          &kp ENTER        &lt 2 TAB           &kp BACKSPACE
+                                                      &kp DELETE       &mo 1              &kp ENTER          &kp SPACE        &lt 2 TAB           &kp BACKSPACE
             >;
         };
 
