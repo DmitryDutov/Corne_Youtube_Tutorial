@@ -104,9 +104,9 @@
 
             display-name = "Lower";
             bindings = <
-&kp LESS_THAN  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4            &kp N5               &kp NUMBER_6  &kp N7          &kp N8        &kp N9     &kp N0   &kp GREATER_THAN
-&trans         &trans        &trans        &trans        &kp LC(LG(LEFT_ARROW))  &kp LC(LG(RIGHT))    &kp LEFT      &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT  &kp DOT  &kp COMMA
-&trans         &trans        &trans        &trans        &trans                  &trans               &kp HOME      &kp PAGE_DOWN   &kp PAGE_UP   &kp END    &trans   &trans
+&kp LESS_THAN  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4            &kp N5               &kp NUMBER_6  &kp N7          &kp N8        &kp N9     &kp N0      &kp GREATER_THAN
+&trans         &trans        &trans        &trans        &kp LC(LG(LEFT_ARROW))  &kp LC(LG(RIGHT))    &kp LEFT      &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT  &kp KP_DOT  &kp KP_COMMA
+&trans         &trans        &trans        &trans        &trans                  &trans               &kp HOME      &kp PAGE_DOWN   &kp PAGE_UP   &kp END    &trans      &trans
                                            &trans        &trans                  &trans               &trans        &trans          &trans
             >;
         };
