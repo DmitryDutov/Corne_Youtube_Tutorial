@@ -37,6 +37,45 @@
         };
     };
 
+    combos {
+        compatible = "zmk,combos";
+
+        left_scobe {
+            bindings = <&kp LEFT_PARENTHESIS>;
+            key-positions = <4 5>;
+        };
+
+        left_kv_scobe {
+            bindings = <&kp LEFT_BRACKET>;
+            key-positions = <16 17>;
+        };
+
+        left_fig_scobe {
+            bindings = <&kp LEFT_BRACE>;
+            key-positions = <28 29>;
+        };
+
+        right_scobe {
+            bindings = <&kp RIGHT_PARENTHESIS>;
+            key-positions = <6 7>;
+        };
+
+        right_kv_scobe {
+            bindings = <&kp RIGHT_BRACKET>;
+            key-positions = <18 19>;
+        };
+
+        right_fig_scobe {
+            bindings = <&kp RIGHT_BRACE>;
+            key-positions = <30 31>;
+        };
+
+        equals {
+            bindings = <&kp EQUAL>;
+            key-positions = <5 6>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -49,10 +88,10 @@
 
             display-name = "Base";
             bindings = <
-&HML PLUS EQUAL  &HML NUMBER_1 Q     &HML NUMBER_2 W  &HML NUMBER_3 E  &HML NUMBER_4 R    &HML N5 T          &HMR NUMBER_6 Y  &HMR N7 U           &HMR N8 I         &HMR N9 O     &HMR N0 P              &HMR LS(MINUS) MINUS
-&kp GRAVE        &HML ESCAPE A       &HML LCTRL S     &HML LEFT_ALT D  &HML LEFT_SHIFT F  &HML LEFT_WIN G    &HMR LEFT_WIN H  &HMR RIGHT_SHIFT J  &HMR RIGHT_ALT K  &HMR RCTRL L  &HMR ESCAPE SEMICOLON  &kp SQT
-&kp BACKSLASH    &mt LEFT_BRACKET Z  &kp X            &kp C            &kp V              &kp B              &kp N            &kp M               &kp COMMA         &kp DOT       &kp RIGHT_BRACKET      &kp FSLH
-                                                      &kp DELETE       &mo 1              &kp ENTER          &kp SPACE        &lt 2 TAB           &kp BACKSPACE
+&lt 3 PLUS     &kp Q  &kp W         &kp E            &kp R              &kp T              &kp Y            &kp U               &kp I             &kp O         &kp P          &kp MINUS
+&kp GRAVE      &kp A  &HML LCTRL S  &HML LEFT_ALT D  &HML LEFT_SHIFT F  &HML LEFT_WIN G    &HMR LEFT_WIN H  &HMR RIGHT_SHIFT J  &HMR RIGHT_ALT K  &HMR RCTRL L  &kp SEMICOLON  &kp SQT
+&kp BACKSLASH  &kp Z  &kp X         &kp C            &kp V              &kp B              &kp N            &kp M               &kp COMMA         &kp DOT       &kp COLON      &kp FSLH
+                                    &kp DELETE       &lt 1 ESCAPE       &kp ENTER          &kp SPACE        &lt 2 TAB           &kp BACKSPACE
             >;
         };
 
@@ -65,10 +104,10 @@
 
             display-name = "Lower";
             bindings = <
-&kp F11  &kp F1  &kp F2  &kp F3  &kp F4                  &kp F5               &kp F6    &kp F7          &kp F8        &kp F9     &kp F10  &kp F12
-&trans   &trans  &trans  &trans  &kp LC(LG(LEFT_ARROW))  &kp LC(LG(RIGHT))    &kp LEFT  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT  &trans   &trans
-&trans   &trans  &trans  &trans  &trans                  &trans               &kp HOME  &kp PAGE_DOWN   &kp PAGE_UP   &kp END    &trans   &trans
-                         &trans  &trans                  &trans               &trans    &trans          &trans
+&kp LESS_THAN  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4            &kp N5               &kp NUMBER_6  &kp N7          &kp N8        &kp N9     &kp N0  &kp GREATER_THAN
+&trans         &trans        &trans        &trans        &kp LC(LG(LEFT_ARROW))  &kp LC(LG(RIGHT))    &kp LEFT      &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT  &trans  &trans
+&trans         &trans        &trans        &trans        &trans                  &trans               &kp HOME      &kp PAGE_DOWN   &kp PAGE_UP   &kp END    &trans  &trans
+                                           &trans        &trans                  &trans               &trans        &trans          &trans
             >;
         };
 
@@ -81,8 +120,8 @@
 
             display-name = "Raise";
             bindings = <
-&kp TILDE  &kp EXCLAMATION  &kp AT_SIGN  &kp HASH       &kp DOLLAR        &kp PERCENT        &kp CARET        &kp AMPERSAND      &kp ASTERISK      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp PIPE
-&trans     &trans           &trans       &kp LESS_THAN  &kp LEFT_BRACKET  &kp LEFT_BRACE     &kp RIGHT_BRACE  &kp RIGHT_BRACKET  &kp GREATER_THAN  &trans                &trans                 &trans
+&kp TILDE  &kp EXCLAMATION  &kp AT_SIGN  &kp HASH       &kp DOLLAR        &kp PERCENT        &kp CARET        &kp AMPERSAND      &kp ASTERISK      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp UNDERSCORE
+&trans     &trans           &kp EQUAL    &kp LESS_THAN  &kp LEFT_BRACKET  &kp LEFT_BRACE     &kp RIGHT_BRACE  &kp RIGHT_BRACKET  &kp GREATER_THAN  &kp QUESTION          &trans                 &kp PIPE
 &trans     &trans           &trans       &trans         &trans            &kp PRINTSCREEN    &bt BT_SEL 0     &bt BT_SEL 1       &bt BT_SEL 2      &bt BT_SEL 3          &bt BT_SEL 4           &bt BT_CLR
                                          &trans         &trans            &trans             &trans           &trans             &trans
             >;
@@ -90,10 +129,10 @@
 
         layer_3 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans    &trans  &trans  &trans
+&trans  &kp F1  &kp F2  &kp F3  &kp F4  &kp F5            &kp F6        &kp F7        &kp F8          &kp F9        &kp F10       &trans
+&trans  &trans  &trans  &trans  &trans  &kp F11           &kp F12       &trans        &trans          &trans        &trans        &trans
+&trans  &trans  &trans  &trans  &trans  &bt BT_CLR_ALL    &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2    &bt BT_SEL 3  &bt BT_SEL 4  &bt BT_CLR
+                        &trans  &trans  &trans            &kp LCTRL     &kp LEFT_ALT  &kp LEFT_SHIFT
             >;
         };
     };
