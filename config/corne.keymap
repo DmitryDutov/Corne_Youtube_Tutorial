@@ -74,6 +74,16 @@
             bindings = <&kp EQUAL>;
             key-positions = <5 6>;
         };
+
+        copy {
+            bindings = <&kp LC(C)>;
+            key-positions = <17 18>;
+        };
+
+        paste {
+            bindings = <&kp LC(V)>;
+            key-positions = <30 29>;
+        };
     };
 
     keymap {
@@ -91,7 +101,7 @@
 &lt 3 PLUS     &kp Q  &kp W         &kp E            &kp R              &kp T              &kp Y            &kp U               &kp I             &kp O         &kp P          &kp MINUS
 &kp GRAVE      &kp A  &HML LCTRL S  &HML LEFT_ALT D  &HML LEFT_SHIFT F  &HML LEFT_WIN G    &HMR LEFT_WIN H  &HMR RIGHT_SHIFT J  &HMR RIGHT_ALT K  &HMR RCTRL L  &kp SEMICOLON  &kp SQT
 &kp BACKSLASH  &kp Z  &kp X         &kp C            &kp V              &kp B              &kp N            &kp M               &kp COMMA         &kp DOT       &kp COLON      &kp FSLH
-                                    &kp DELETE       &lt 1 ESCAPE       &kp ENTER          &kp SPACE        &lt 2 TAB           &kp BACKSPACE
+                                    &kp DELETE       &lt 1 ESCAPE       &lt 2 ENTER        &kp SPACE        &lt 2 TAB           &kp BACKSPACE
             >;
         };
 
@@ -106,7 +116,7 @@
             bindings = <
 &kp LESS_THAN  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4            &kp N5               &kp NUMBER_6  &kp N7          &kp N8        &kp N9     &kp N0      &kp GREATER_THAN
 &trans         &trans        &trans        &trans        &kp LC(LG(LEFT_ARROW))  &kp LC(LG(RIGHT))    &kp LEFT      &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT  &kp KP_DOT  &kp KP_COMMA
-&trans         &trans        &trans        &trans        &trans                  &trans               &kp HOME      &kp PAGE_DOWN   &kp PAGE_UP   &kp END    &trans      &trans
+&trans         &trans        &trans        &kp LC(S)     &kp LC(V)               &kp LC(C)            &kp HOME      &kp PAGE_DOWN   &kp PAGE_UP   &kp END    &trans      &trans
                                            &trans        &trans                  &trans               &trans        &trans          &trans
             >;
         };
